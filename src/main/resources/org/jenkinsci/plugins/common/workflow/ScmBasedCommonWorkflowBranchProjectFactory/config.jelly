@@ -1,0 +1,19 @@
+<!--
+  Copyright © 2018 Booz Allen Hamilton. All Rights Reserved.
+  This software package is licensed under the Booz Allen Public License. The license can be found in the License file or at http://boozallen.github.io/licenses/bapl
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form" xmlns:st="jelly:stapler">
+  <f:dropdownDescriptorSelector field="scm" title="SCM" descriptors="${descriptor.applicableDescriptors}"/>
+  <f:entry field="scriptPath" title="${%Script Path}">
+      <f:textbox default="Jenkinsfile"/>
+  </f:entry>
+  <f:entry field="lightweight">
+    <f:checkbox default="true" title="${%Lightweight Checkout}"/>
+  </f:entry>
+  <f:entry field="sandbox">
+    <f:checkbox default="true" title="${%Use Groovy Sandbox}"/>
+  </f:entry>
+</j:jelly>
