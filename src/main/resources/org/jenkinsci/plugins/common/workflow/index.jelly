@@ -1,9 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Copyright © 2018 Booz Allen Hamilton. All Rights Reserved.
   This software package is licensed under the Booz Allen Public License. The license can be found in the License file or at http://boozallen.github.io/licenses/bapl
 -->
-
-<?xml version="1.0" encoding="UTF-8"?>
 <?jelly escape-by-default='true'?>
 <div>
     Extension for workflow-multibranch-plugin. Automatically build branches the prepared default pipeline script.
