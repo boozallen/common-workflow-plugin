@@ -35,10 +35,11 @@ then restart the server.
 
 ## Using the Plugin
 
-<!--
 ### Prerequisites
-* a Credentials object with the username and password of a github account
--->
+* If your project source code is in a private repository, create a Jenkins credential  
+  that can, at minimum, read from those repositories.
+* If the repository containing the entrypoint script you wish to use is in a private  
+  repository, you will need a Jenkins credential to read from that repository as well.
 
 ### Steps
 
@@ -50,8 +51,9 @@ Enter an "item name" as prompted - this is typically the name of your GitHub
 Organization - then select the "GitHub Organization" job and click OK.
 ![image](https://user-images.githubusercontent.com/10341296/45721915-0938ff00-bb78-11e8-8492-05253e72f807.png)
 
-You will then be taken to a screen to configure your new job. Scroll down to Projects, select your
-GitHub credential from the drop down, then delete the default Project Recognizer.
+You will then be taken to a screen to configure your new job. Scroll down to Projects and,
+if your source code is not in a public repository, select the appropriate credentials from
+the drop down. Otherwise select "none." Then delete the default Project Recognizer.
 ![image](https://user-images.githubusercontent.com/10341296/45722017-7ba9df00-bb78-11e8-9069-c2a136fdfaba.png)
 
 Click Add to add a new project recognizer and select "Common Pipeline Script From SCM"
@@ -59,9 +61,11 @@ Click Add to add a new project recognizer and select "Common Pipeline Script Fro
 
 You should see a section pop up like the one below. Do the following
 1. Select the source code management tool you will be using (likely Git)
-2. Enter the Repository URL in the corresponding field for the repository containing the entrypoint script you plan to use.  
+2. Enter the Repository URL in the corresponding field for the repository   
+   containing the entrypoint script you plan to use.  
    You can git this by clicking the "clone" button on the repository's page and copying the https URL
-3. Once again select your credentials from the dropdown in the Credentials field
+3. If the repository containing your entrypoint script is private, select the appropriate  
+   credentials from the dropdown in the Credentials field. Otherwise select "none."
 4. Enter the path of your entrypoint script in the Script Path field. The path is relative to the root  
    of the repository
 5. Optionally uncheck "Use Groovy Sandbox"
