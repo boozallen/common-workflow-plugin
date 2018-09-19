@@ -2,8 +2,8 @@
 
 ## Purpose
 
-This purpose of this Jenkins plugin is to make it possible to use a single entrypoint
-script, stored and maintained using an SCM tool such as GitHub, for an entire
+This purpose of this Jenkins plugin is to make it possible to use a single Jenkinsfile,
+stored and maintained using an SCM tool such as GitHub, for an entire
 organization. This simplifies the governance of the organization's CI/CD pipelines
 while improving scalability and maintainability.
 
