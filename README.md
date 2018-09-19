@@ -35,8 +35,10 @@ then restart the server.
 
 ## Using the Plugin
 
+<!--
 ### Prerequisites
 * a Credentials object with the username and password of a github account
+-->
 
 ### Steps
 
