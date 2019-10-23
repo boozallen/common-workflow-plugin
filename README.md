@@ -1,3 +1,7 @@
+# Deprecated!
+
+This plugin is no longer supported.  It's functionality has been superseded into the [Jenkins Templating Engine](https://github.com/jenkinsci/templating-engine-plugin).  Documentation for JTE can be found [here](https://jenkinsci.github.io/templating-engine-plugin). 
+
 # Common Workflow Plugin
 
 ## Purpose
